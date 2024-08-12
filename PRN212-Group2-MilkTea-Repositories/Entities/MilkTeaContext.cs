@@ -35,7 +35,7 @@ public partial class MilkTeaContext : DbContext
              .SetBasePath(Directory.GetCurrentDirectory())
                     .AddJsonFile("appsettings.json", true, true)
                     .Build();
-        var strConn = config["ConnectionStrings:ShoppingDB"];
+        var strConn = config["ConnectionStrings:DefaultConnection"];
 
         return strConn;
     }
